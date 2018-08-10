@@ -1,0 +1,4 @@
+/Users/peterma/Projects/Lock/Lock/obj/x86/Debug/Lock.csprojResolveAssemblyReference.cache
+/Users/peterma/Projects/Lock/Lock/obj/x86/Debug/TinyCLR_DebugReferences.cache
+/Users/peterma/Projects/Lock/Lock/obj/x86/Debug/Lock.csproj.CoreCompileInputs.cache
+/Users/peterma/Projects/Lock/Lock/obj/x86/Debug/Lock.exe

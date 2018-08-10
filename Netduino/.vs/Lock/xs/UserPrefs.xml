@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{A8249709-8B61-4542-B2DC-87F6D6462528}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lock/Program.cs">
+    <Files>
+      <File FileName="Lock/Program.cs" Line="6" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lock" expanded="True">
+            <Node name="Lock" expanded="True">
+              <Node name="References" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Lock PreferredExecutionTarget="8881-4096" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>
