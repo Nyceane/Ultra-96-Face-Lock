@@ -59,7 +59,7 @@ def overlay_on_image(display_image, image_info, matching):
                      (display_image.shape[1]-offset-1, display_image.shape[0]-offset-1),
                      (0, 255, 0), 10)
        if framecount >= 20:
-           url = "http://192.168.1.210"
+           url = "http://192.168.1.22"
            foobar ="ON"
            try:
                requests.post(url, data="ON")
