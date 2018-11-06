@@ -9,7 +9,6 @@ import numpy
 import cv2
 import sys
 import os
-import requests
 
 EXAMPLES_BASE_DIR='../../'
 IMAGES_DIR = './'
@@ -29,7 +28,7 @@ REQUEST_CAMERA_HEIGHT = 480
 # the same face will return 0.0
 # different faces return higher numbers
 # this is NOT between 0.0 and 1.0
-FACE_MATCH_THRESHOLD = 1.0
+FACE_MATCH_THRESHOLD = 1.2
 
 
 # Run an inference on the passed image
@@ -62,32 +61,18 @@ def run_inference(image_to_classify, facenet_graph):
 # image info is a text string to overlay onto the image.
 # matching is a Boolean specifying if the image was a match.
 # returns None
-framecount = 0
 def overlay_on_image(display_image, image_info, matching):
-    global framecount
     rect_width = 10
     offset = int(rect_width/2)
     if (image_info != None):
         cv2.putText(display_image, image_info, (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1)
     if (matching):
-        framecount += 1
-
-            # match, green rectangle
+        # match, green rectangle
         cv2.rectangle(display_image, (0+offset, 0+offset),
                       (display_image.shape[1]-offset-1, display_image.shape[0]-offset-1),
                       (0, 255, 0), 10)
-        if framecount >= 20:
-            
-            url = "http://192.168.21.210"
-            foobar ="ON"
-            try:
-                requests.post(url, data="ON")
-            except:
-                print('success')
-            framecount=0
     else:
         # not a match, red rectangle
-        framecount = 0
         cv2.rectangle(display_image, (0+offset, 0+offset),
                       (display_image.shape[1]-offset-1, display_image.shape[0]-offset-1),
                       (0, 0, 255), 10)
